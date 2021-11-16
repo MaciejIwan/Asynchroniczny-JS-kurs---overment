@@ -2,7 +2,7 @@ const promise = Promise.resolve(42);
 console.log(promise);
 
 // Promise.resolve() moze sie przydac gdy np w funkcji mamy dwa przypadki:
-// gdy dane mamy juz lokalnie, oraz taki gdy musimy zaciagnac informacje z serwera
+// gdy pewne dane mamy juz lokalnie, oraz taki gdy musimy zaciagnac informacje z serwera
 // aby "na zewnatrz" funkcji kazdy w obu przypadkach zwracac to samo
 // wykorzystuje,my .resolve() do zwrocenia natychmiastowego wybujy jako obietnica
 

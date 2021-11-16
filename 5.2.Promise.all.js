@@ -4,7 +4,7 @@
 // bledy nalezy obslugiwac bezposrednio przy obietnicach jak nizej:
 Promise.all([
         new Promise((resolve, reject) => setTimeout(() => resolve(1), 5000)),
-        Promise.reject(Error("Blad ale masz reszte rozwiazac")).catch(err => console.log(err)),
+        Promise.reject(Error("Wystąpil blad ale masz reszte rozwiazan (tych ktore sie powiodly)")).catch(err => console.log(err.name)),
         new Promise((resolve, reject) => setTimeout(() => resolve(1), 200)),
     ]).then(responses => {
         console.log(`reszta rozwizan:`, responses);
